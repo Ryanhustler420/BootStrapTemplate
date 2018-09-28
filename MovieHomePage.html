@@ -35,25 +35,26 @@
     }
 
     .footer{
+      background-color: #DADADA;
       position: fixed;
       left: 0;
       bottom: 0;
       height: 40px;
       width: 100%;
-      background-color: white;
       color: black;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 
-    .navbar-default{
+    .navbar-default-custome{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
         transition: 0.5s;
+        background-color: #DADADA;
     }
   </style>
 
   <body>
-      <div class="navbar navbar-fixed-top navbar-default">
+      <div class="navbar navbar-fixed-top navbar-default navbar-default-custome">
     	<div class="container">
         <div class="navbar-header"><a class="navbar-brand" href="#">Goonsroom</a><a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="glyphicon glyphicon-bar"></span>
@@ -86,34 +87,49 @@
                   <div class="well">
                       <ul class="nav">
                           <li class="nav-header">Genres</li>
-
-                          <li class="active" style="text-align:center;"><a href="#">Action</a>
+                          <hr />
+                          <li class="active"><a href="#">Action</a>
                           </li>
-                          <li style="text-align:center;"><a href="#">Horror</a>
+                          <li><a href="#">Horror</a>
                           </li>
-                          <li style="text-align:center;"><a href="#">Comedy</a>
+                          <li><a href="#">Comedy</a>
                           </li>
-                          <li style="text-align:center;"><a href="#">Drama</a>
+                          <li><a href="#">Drama</a>
                           </li>
                       </ul>
                   </div>
+                  <hr>
                   <!--/.well -->
+                  <div class="well">
+                      <ul class="nav">
+                          <li class="nav-header">Sort by</li>
+                          <hr />
+                          <li class="active"><label><input type="checkbox" value=""> High Price</label></li>
+                          <li class="active"><label><input type="checkbox" value=""> Low Price</label></li>
+                          <li class="active"><label><input type="checkbox" value=""> Name</label></li>
+                          <li class="active"><label><input type="checkbox" value=""> Rating</label></li>
+                      </ul>
+                      <hr />
+                      <input type="button" class="btn btn-success" name="Apply" value="Apply">
+                  </div>
               </div>
               <!--/sidebar-nav-fixed -->
           </div>
           <!--/span-->
           <div class="col-md-9 float-left">
 
-            <div class="col-md-5" style="margin-bottom:10px;">
-               <div class="card cardShadow">
-                  <img class="card-img-top" style="height:325px; width:325px;" src="https://static1.squarespace.com/static/5609d907e4b02241efa8d515/t/590e6dca197aea57f405682a/1494117839111/" alt="Card image cap">
-                  <div class="card-body" style="padding:10px;">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-outline-light btn-sm">View</a>
-                  </div>
-               </div>
-            </div>
+
+            <header>
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Top Movies</a></li>
+                    <li><a href="#">Upcoming Movies</a></li>
+                    <li><a href="#">Hollywood Movies</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
 
             <div class="col-md-5" style="margin-bottom:10px;">
                <div class="card cardShadow">
@@ -127,19 +143,7 @@
             </div>
 
             <div class="col-md-5" style="margin-bottom:10px;">
-               <div class="card cardShadow"> <!--Hover over effect-->
-                  <img class="card-img-top" style="height:325px; width:325px;" src="https://static1.squarespace.com/static/5609d907e4b02241efa8d515/t/590e6dca197aea57f405682a/1494117839111/" alt="Card image cap">
-                  <div class="card-body" style="padding:10px;">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-outline-light btn-sm">View</a>
-                  </div>
-               </div>
-            </div>
-
-
-            <div class="col-md-5" style="margin-bottom:10px;">
-               <div class="card cardShadow"> <!--Hover over effect-->
+               <div class="card cardShadow">
                   <img class="card-img-top" style="height:325px; width:325px;" src="https://static1.squarespace.com/static/5609d907e4b02241efa8d515/t/590e6dca197aea57f405682a/1494117839111/" alt="Card image cap">
                   <div class="card-body" style="padding:10px;">
                      <h5 class="card-title">Card title</h5>
@@ -171,7 +175,6 @@
                   </div>
                </div>
             </div>
-
 
             <div class="col-md-5" style="margin-bottom:10px;">
                <div class="card cardShadow"> <!--Hover over effect-->
@@ -219,7 +222,31 @@
                   </div>
                </div>
             </div>
-            
+
+
+            <div class="col-md-5" style="margin-bottom:10px;">
+               <div class="card cardShadow"> <!--Hover over effect-->
+                  <img class="card-img-top" style="height:325px; width:325px;" src="https://static1.squarespace.com/static/5609d907e4b02241efa8d515/t/590e6dca197aea57f405682a/1494117839111/" alt="Card image cap">
+                  <div class="card-body" style="padding:10px;">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-outline-light btn-sm">View</a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-md-5" style="margin-bottom:10px;">
+               <div class="card cardShadow"> <!--Hover over effect-->
+                  <img class="card-img-top" style="height:325px; width:325px;" src="https://static1.squarespace.com/static/5609d907e4b02241efa8d515/t/590e6dca197aea57f405682a/1494117839111/" alt="Card image cap">
+                  <div class="card-body" style="padding:10px;">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-outline-light btn-sm">View</a>
+                  </div>
+               </div>
+            </div>
+
 
 
           </div>
